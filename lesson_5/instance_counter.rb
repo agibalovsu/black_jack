@@ -9,7 +9,7 @@ module InstanceCounter
     attr_accessor :count_instances
 
     def instances
-      puts "Количество экземпляров класса: #{count_instances}"
+      return count_instances
     end
 
   end
