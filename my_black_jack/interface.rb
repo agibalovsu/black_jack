@@ -32,10 +32,10 @@ class Interface
     puts "Результаты #{user.name}:"
   end
 
-  def show_cards_score(user)
+  def show_cards_score(hand)
     line
-    puts "Текущие очки: #{user.count_score}"
-    user.current_cards.each { |card| puts "#{card.lear} #{card.name} " }
+    puts "Текущие очки: #{hand.count_score}"
+    hand.current_cards.each { |card| puts "#{card.lear} #{card.name} " }
     line
   end
 
